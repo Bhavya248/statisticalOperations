@@ -71,7 +71,7 @@ while continue_program == "Y" :
     if continue_program == "N" :
         quit()
     elif continue_program == 'Y':
-        input_data()
+        f = input_data()
         print('''Enter the operation to be performed for the entered data :
              MEAN       --> for mean of data
              MEDIAN     --> for median of data
@@ -80,4 +80,4 @@ while continue_program == "Y" :
              DECILE     --> For Decile of data
              PERCENTILE -->for percentile of data''')
         operations_key = str(input())
-        operation(operations_key,data_format)
+        operation(operations_key,f)
