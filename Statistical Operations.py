@@ -205,9 +205,9 @@ elif operation == 'MOR' :
         frequency.append({i:count})
     frequency_obs = []
     for i in range(N):
-        frequency_obs.append(frequency{i})
+        frequency_obs.append(frequency[i])
     mode_frequency = max(frequency_obs)
-    mode = frequency{}
+    mode = list(frequency.keys())[list(frequency.values()).index(mode_frequency)]
         
     
 
