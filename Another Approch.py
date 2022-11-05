@@ -19,14 +19,14 @@ def input_data():
          print(observation)
     '''End for Raw observations'''   
     '''Ungrouped frequency distribution'''
-    if data_format == 'UGF' :
+    elif data_format == 'UGF' :
         for i in range(N):
-         print('Enter the integral observation --> ')
-         obs = int(input())
-         observation.append(int(obs))
-         print('Enter Frequency for observation --> ')
-         freq = int(input())
-         frequency.append(freq)
+              print('Enter the integral observation --> ')
+              obs = int(input())
+              observation.append(int(obs))
+              print('Enter Frequency for observation --> ')
+              freq = int(input())
+              frequency.append(freq)
         print('Your entered data:')
         print('Observation | Frequency')
         for i in range(N):
