@@ -55,9 +55,16 @@ def input_data():
         for i in range(N):
               print(observation[i][0],'-',observation[i][1],'    | ',frequency[i],'      | ',classmark[i])
               result = (classmark[i]*frequency[i])
+        return data_format      
  
-def operation() :
-    pass
+def operation(x,y) :
+    if x == 'MEAN' and y == 'raw' :
+        summation = 0
+        for i in range(N):
+            summation = summation + i
+        print('Mean for given data is',summation/N)
+
+
 
 continue_program = "Y"
 while continue_program == "Y" :
@@ -65,3 +72,12 @@ while continue_program == "Y" :
         quit()
     elif continue_program == 'Y':
         input_data()
+        print('''Enter the operation to be performed for the entered data :
+             MEAN       --> for mean of data
+             MEDIAN     --> for median of data
+             MODE       --> for mode of data
+             QUARTILE   --> for quartile of data
+             DECILE     --> For Decile of data
+             PERCENTILE -->for percentile of data''')
+        operations_key = str(input())
+        operation(operations_key,data_format)
