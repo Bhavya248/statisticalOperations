@@ -64,6 +64,18 @@ def operation(x,y) :
         for i in range(N):
             summation = summation + i
         print('Mean for given data is',summation/N)
+    elif x == 'MEAN' and y == 'UGF' :
+          for i in range(N):
+                 print('Enter the integral observation --> ')
+                 obs = int(input())
+                 observation.append(int(obs))
+                 print('Enter Frequency for observation --> ')
+                 freq = int(input())
+                 frequency.append(freq) 
+          for i in range(N):
+                 fx = (observation[i]*frequency[i]) + fx
+          print('Mean for the data is ',fx/N)
+         
 
 
 
