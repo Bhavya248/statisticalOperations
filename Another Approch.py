@@ -1,14 +1,14 @@
 # This is the same code with functional and never ending approch 
+observation = []
+frequency = []
+lcf = []
+classmark = []
 def input_data():
     print('''Enter the format of data :
               RAW --> RAW data
               UGF --> Ungrouped Frequency Distribution
               GRF --> Grouped Frequency Distribution''')
     data_format = str(input())
-    observation = []
-    frequency = []
-    lcf = []
-    classmark = []
     N = int(input('Enter number of observation --> '))
     '''The section below will take data for observations'''
     if data_format == 'RAW' :
@@ -19,7 +19,8 @@ def input_data():
          print(observation)
     '''End for Raw observations'''   
     '''Ungrouped frequency distribution'''
-    elif data_format == 'UGF' :
+    if data_format == 'UGF' :
+
         for i in range(N):
               print('Enter the integral observation --> ')
               obs = int(input())
@@ -68,10 +69,10 @@ def operation(x,y) :
 
 continue_program = "Y"
 while continue_program == "Y" :
+    continue_program = str(input('Continue the program (Y/N) -->'))
     if continue_program == "N" :
         quit()
     elif continue_program == 'Y':
-        f = input_data()
         print('''Enter the operation to be performed for the entered data :
              MEAN       --> for mean of data
              MEDIAN     --> for median of data
@@ -80,4 +81,5 @@ while continue_program == "Y" :
              DECILE     --> For Decile of data
              PERCENTILE -->for percentile of data''')
         operations_key = str(input())
+        f = input_data()
         operation(operations_key,f)
