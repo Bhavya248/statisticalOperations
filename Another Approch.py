@@ -84,7 +84,7 @@ def operation(x,y) :
 
 continue_program = "Y"
 while continue_program == "Y" :
-    continue_program = str(input('Continue the program (Y/N) -->'))
+    
     if continue_program == "N" :
         quit()
     elif continue_program == 'Y':
@@ -98,3 +98,4 @@ while continue_program == "Y" :
         operations_key = str(input())
         f = input_data()
         operation(operations_key,f)
+    continue_program = str(input('Continue the program (Y/N) -->'))    
