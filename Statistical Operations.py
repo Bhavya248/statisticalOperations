@@ -208,6 +208,7 @@ elif operation == 'MOR' :
         frequency_obs.append(frequency[i])
     mode_frequency = max(frequency_obs)
     mode = list(frequency.keys())[list(frequency.values()).index(mode_frequency)]
+    print('mode for given data is -->',mode)
         
     
 
