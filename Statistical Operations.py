@@ -190,7 +190,7 @@ elif operation == "MIG" :
 #Mode for raw data
 elif operation == 'MOR' :
     N = int(input("Enter number of observation --> "))
-    observaion = []
+    observation = []
     frequency =[]
     for i in range(N):
         print('Enter the ',i,' observation -->')
