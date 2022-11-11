@@ -98,4 +98,5 @@ while continue_program == "Y" :
         operations_key = str(input())
         f = input_data()
         operation(operations_key,f)
-    continue_program = str(input('Continue the program (Y/N) -->'))    
+    continue_program = str(input('Continue the program (Y/N) -->'))
+    reset_ata = input()    
