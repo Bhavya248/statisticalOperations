@@ -1,6 +1,6 @@
 #Statistics Solver
-print('''Welcome to onestop stat solution
-You will fin all moules for performing statistical operations...
+print('''Welcome to onestop statistics point
+You will fin all modules for performing statistical operations...
 Just type the operation and module appears:
 MR   --> Mean For Raw data
 MU   --> Mean For Ungrouped frequency data
