@@ -17,6 +17,7 @@ def input_data():
               observation.append(int(input()))
          print('Your entered data')
          print(observation)
+         print('The mean of given data is ',' -->',sum(observation)/N)
          '''End for Raw observations'''   
          '''Ungrouped frequency distribution'''
 
